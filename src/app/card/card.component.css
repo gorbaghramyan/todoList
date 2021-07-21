@@ -1,18 +1,6 @@
-.app {
-    margin:auto;
-}
-h1 {
-    text-align: center;
-}
-
-.inputWrap {
+.outputWrap {
     display: flex;
     flex-direction: column;
-    
-}
-label {
-    font-size: 18px;
-    margin: 10px 0;
 }
 
 input {
@@ -29,25 +17,34 @@ input:focus {
     outline: none;
 }
 
-.createCard {
+input[disabled] {
+    color: #000;
+}
+
+.card {
     width: 30%;
     background: #959fc74b;
     border: 1px solid rgba(0, 0, 0, 0.23);
     padding: 15px 30px;
+    margin-top: 50px;
     margin-left: 35%;
+}
+label {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 @media only screen and (max-width: 1000px) {
-    .createCard {
+    .card {
         width: 60%;
         margin-left: 20%;
     }
 }
 
-.add-btn {
+.delete-btn {
     margin: auto;
-    margin-top: 50px;
-    width: 20%;
+    margin-top: 20px;
+    width: fit-content;
     padding: 10px;
     text-align: center;
 }

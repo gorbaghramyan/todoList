@@ -1,0 +1,19 @@
+<div class="card"> 
+    <div class="outputWrap">
+      <label >Name</label>
+      <input value={{card.name}} disabled='true' type="text">
+    </div>
+
+    <div class="outputWrap">
+      <label >Note</label>
+      <input value={{card.note}} disabled='true' type="text">
+    </div>
+
+    <div class="outputWrap">
+      <label >Due</label>
+      <input value={{card.due}} disabled='true' type="date">
+    </div>
+    <div class="outputWrap">
+      <button (click)='delete()' class="delete-btn">Delete</button>
+    </div>
+  </div>
