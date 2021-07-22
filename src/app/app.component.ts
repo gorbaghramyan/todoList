@@ -15,13 +15,12 @@ export class AppComponent {
 
   delete(card: Card) {
     this.cards.splice(this.cards.indexOf(card), 1);
-    console.log(this.cards); 
   }
 
   add() {
     if(this.name && this.note) {
-      this.cards.push({id: this.cards[this.cards.length-1].id + 1, name: this.name, note: this.note,due: this.due});
-      console.log(this.cards);
+      const id = this.cards?.length ? this.cards[this.cards.length-1].id + 1 : 0 ;
+      this.cards.push({id, name: this.name, note: this.note,due: this.due});
     } else alert('All values are required');
   }
 
